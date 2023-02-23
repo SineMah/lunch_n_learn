@@ -1,0 +1,21 @@
+version: "3"
+services:
+
+    # http://127.0.0.1:5984/_utils/
+    # create databses by your own:
+    #     _users
+    #     _replicator
+    couch_db:
+        container_name: couch_db
+        image: couchdb:latest
+        environment:
+            - COUCHDB_USER=admin
+            - COUCHDB_PASSWORD=secret
+        ports:
+            - "5984:5984"
+        networks:
+            - couchdb
+
+networks:
+    couchdb:
+        driver: bridge
