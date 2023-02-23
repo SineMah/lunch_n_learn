@@ -1,0 +1,23 @@
+GraphQL
+- What is ...
+    - developed by Facebook
+    - released in 2015
+    - query language (& runtime) for APIs
+    - API data includes complete description -> documentation by default
+    - data fetching control
+    - backwards compatible
+    - multiple queries with one request, one endpoint
+- REST vs GraphQL
+    - GraphQL is more complex
+    - GraphQL is typesafe (schemas)
+    - data fetching control with GraphQL
+    - easier data aggregation with GraphQL
+    - REST has better error handling
+    - Caching is easier with REST APIs
+- GraphQL Limitations
+    - heavy GraphQL queries can slow down your API
+    - binary uploads ain’t GraphQL’s favourite
+        - mutations with base64 encoded Blobs
+        - mutations with a multipart HTTP requests
+        - using a separate (REST) API ¯\_(ツ)_/¯
+    - keep track on your roles and scopes for each query not for each request since querying multiple queries with on request is common practice
