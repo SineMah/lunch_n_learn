@@ -38,7 +38,7 @@ GraphQL development environment
   items(search: {pokemon: "charmander"}) {name pokemon}
 }
 ```
-```
+```graphql
 {
   poke_list(pagination: {page:0 size: 15}) {name}
 }
